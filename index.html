@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+<body>
+    <!-- wrapper div starts -->
+    <div class="wrapper height-100 display-flex">
+        <input type="checkbox" id="sidebar-toggle" class="checkbox display-none">
+        <!--sidebar starts here-->
+        <aside class="sidebar">
+            <div class="aside-wrapper">
+            <!--div for logo starts-->
+            <div class="sidebar-logo display-flex align-items-center ml-20 mt-20">
+            <div class="d-icon display-flex align-items-center justify-content-center ">
+                <i class="fa-solid fa-d"></i>
+            </div>
+            <span class="logo-text ml-10">Dashboard Kit</span>
+        </div>
+         <!--div for logo ends-->
+         <!--nav starts-->
+         <nav class="navbar display-flex flex-direction">
+         <div class="top-menu mt-45">
+            <ul class="list">
+                <li class="link-list"><i class="fa-solid fa-id-card-clip ml-10"></i><a class="links ml-15" href="#">Overview</a></li>
+                <li class="link-list" id="active"><i class="fa-solid fa-ticket ml-10"></i><a class="links ml-15" href="#">Tickets</a></i></li>
+                <li class="link-list"><i class="fa-solid fa-lightbulb ml-10"></i><a class="links ml-15" href="#">Ideas</a></li>
+                <li class="link-list"><i class="fa-solid fa-id-card-clip ml-10"></i><a class="links ml-15" href="#">Contacts</a></li>
+                <li class="link-list"><i class="fa-solid fa-id-card-clip ml-10"></i><a class="links ml-15" href="#">Agents</a></li>
+                <li class="link-list mb-10"><i class="fa-solid fa-id-card-clip ml-10"></i><a class="links ml-15" href="#">Articles</a></li>
+            </ul>
+         </div>
+         <div class="bottom-menu">
+            <ul class="list">
+                <li class="link-list mt-10 "><i class="fa-solid fa-gear ml-10"></i><a class="links ml-15" href="#">Settings</a></li>
+                <li class="link-list "><i class="fa-solid fa-id-card-clip ml-10"></i><a class="links ml-15" href="#">Subscriptions</a></li>
+            </ul>
+         </div>
+        </nav>
+        <!--nav ends-->
+    </div>
+        </aside>
+        <!--sidebar ends here-->
+        
+        <!--container starts-->
+        <main class="container display-flex flex-direction flex-1">
+            <!--header starts-->
+        <header class="header-main">
+            <label for="sidebar-toggle" class="label-toggle"><i class="fa-solid fa-bars ml-10"></i></label>
+            
+            <div class="header p-20 display-flex justify-content-space-between align-items-center flex-1 ">
+                <h3 class="heading ml-20">Tickets</h3>
+                <div class="right-menu display-flex align-items-center">
+                    <i class="fa fa-magnifying-glass ml-15"></i>
+                    <div class="bell-icon">
+                    <i class="fa-solid fa-bell ml-15"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                    <i class="fa-solid fa-pipe ml-15"></i>
+                    <span class="user-name ml-15">Jones Ferdinand</span>
+                    <img class="user-profile ml-15" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                </div>
+            </div>
+
+        </header>
+        <!--header ends-->
+        <!--main starts-->
+        <section class="main-container display-flex flex-direction flex-1">
+            <div class="main-container-content display-flex justify-content-space-between align-items-center p-20">
+                <div class="left-content">
+                <h3 class="main-content-heading">All tickets</h3>
+            </div>
+            <div class="right-content">
+                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                <span class="main-content-text ml-10">Sort</span>
+                <i class="fa-solid fa-filter ml-20"></i>
+                <span class="main-content-text ml-10">Filter</span>
+            </div>
+            </div>
+            <div class="table">
+                <table class="table-main">
+                    
+                    <tr class="table-row">
+                        <th class="table-head">Ticket details</th>
+                        <th class="table-head">Customer name</th>
+                        <th class="table-head">Date</th>
+                        <th class="table-head">Priority</th>
+                        <th class="table-head"></th>
+
+                    </tr>
+                
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-1 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-1-text ml-20 ">
+                                <span class="table-text">Contact Email not Linked</span>
+                                <h3 class="table-heading mt-5">Updated 1 day ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Tom Cruise</span>
+                            <h3 class="table-heading mt-5">on 24.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 26 2019</span>
+                            <h3 class="table-heading mt-5">6:30 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge">HIGH</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-2 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-2-text ml-20">
+                                <span class="table-text">Adding Images to Featured Posts</span>
+                                <h3 class="table-heading mt-5">Updated 1 day ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Matt Damon</span>
+                            <h3 class="table-heading mt-5">on 24.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 26 2019</span>
+                            <h3 class="table-heading mt-5">8:00 AM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-low">LOW</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-3 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-3-text ml-20">
+                                <span class="table-text">When will I be charged this month?</span>
+                                <h3 class="table-heading mt-5">Updated 1 day ago</h3>
+                            </div>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <span class="table-text">Robert Downey</span>
+                            <h3 class="table-heading mt-5">on 24.05.2019</h3>
+
+                        </td>
+                        <td>
+                            <span class="table-text">May 26 2019</span>
+                            <h3 class="table-heading mt-5">7:30 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge">HIGH</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-4 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-4-text ml-10">
+                                <span class="table-text">Payment not going through</span>
+                                <h3 class="table-heading mt-5">Updated 2 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Christian Bale</span>
+                            <h3 class="table-heading mt-5">on 24.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 25 2019</span>
+                            <h3 class="table-heading mt-5">5:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAl</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-5 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-5-text ml-10">
+                                <span class="table-text">Unable to add replies</span>
+                                <h3 class="table-heading mt-5">Updated 2 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Henry Cavil</span>
+                            <h3 class="table-heading mt-5">on 24.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 25 2019</span>
+                            <h3 class="table-heading mt-5">4:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge">HIGH</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-6 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-6-text ml-20">
+                                <span class="table-text">Downtime since last week</span>
+                                <h3 class="table-heading mt-5">Updated 3 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Chris Evans</span>
+                            <h3 class="table-heading mt-5">on 23.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 25 2019</span>
+                            <h3 class="table-heading mt-5">2:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-7 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-7-text ml-20">
+                                <span class="table-text">Referral Bonus</span>
+                                <h3 class="table-heading mt-5">Updated 4 day ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Sam Smith</span>
+                            <h3 class="table-heading mt-5">on 22.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 25 2019</span>
+                            <h3 class="table-heading mt-5">11:30 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-low">LOW</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+
+
+
+
+
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <div class="data-8 display-flex">
+                                <img class="img" src="./assets/Images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash 3.png" alt="user-profile">
+                                <div class="data-8-text ml-20">
+                                <span class="table-text">How do I change my password</span>
+                                <h3 class="table-heading mt-5">Updated 6 days ago</h3>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="table-text">Steve Rogers</span>
+                            <h3 class="table-heading mt-5">on 21.05.2019</h3>
+                        </td>
+                        <td>
+                            <span class="table-text">May 24 2019</span>
+                            <h3 class="table-heading mt-5">1:00 PM</h3>
+                        </td>
+                        <td>
+                            <span class="badge badge-normal">NORMAL</span>
+                        </td>
+                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                    </tr>
+                </table>
+            </div>
+                <div class="footer display-flex p-20">
+                <span class="footer-text">Rows per page: 8<i class="fa-solid fa-caret-down ml-10"></i></span>
+                <span class="footer-text ml-45">1-8 of 1240</span>
+                <i class="fa-duotone fa-less-than ml-20"></i>
+                <i class="fa-duotone fa-greater-than ml-20"></i>
+            </div>
+
+            
+        </section>
+         <!--main starts-->
+
+        </main>
+<!--container ends-->
+    </div>
+    <!-- wrapper div ends -->
+
+</body>
+</html>
